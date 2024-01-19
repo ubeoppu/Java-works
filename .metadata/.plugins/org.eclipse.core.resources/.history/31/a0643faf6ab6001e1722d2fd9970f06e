@@ -1,0 +1,14 @@
+package ex1;
+
+public class te {
+
+	public static void main(String[] args) {
+
+       int c = 14;
+       int d = 14;
+       String a = "아";
+    		   
+System.out.printf("OO:%d, %s  oo %n ", c , a);
+System.out.println("dd dd");
+	}
+}

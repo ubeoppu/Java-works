@@ -1,0 +1,12 @@
+package ex1;
+
+public class te {
+
+	public static void main(String[] args) {
+		float f = 90.0f;
+		System.out.println(f);
+		// TODO Auto-generated method stub
+
+	}
+
+}
