@@ -1,32 +1,32 @@
 package ex01;
 import java.util.Scanner;
-public class BankBalance {
+public class BankBalance02 {
 
 	public static void main(String[] args) {
 		
 		int bankBalance = 0;
 		int tmp;
+		int i;
 		boolean flag = true;
-		
 		Scanner sc = new Scanner(System.in);
 		
 		
 		while(flag) {
 			System.out.println("----------------------------------");
-			System.out.println(" 1.예금\t|2.출금\t|3. 잔고\t| 4.종료");
+			System.out.println(" 1.예금 |2.출금 |3. 잔고  | 4.종료");
 			System.out.println("----------------------------------");
-			int num = Integer.parseInt(sc.nextLine());
+			int num = sc.nextInt();
 			
 	        switch(num) {
 			case 1:
 				System.out.print("예금액>");
-				tmp = Integer.parseInt(sc.nextLine());
+				tmp = sc.nextInt();
 				bankBalance += tmp;
 				break;
 				
 			case 2:
 				System.out.print("출금액>");
-				tmp = Integer.parseInt(sc.nextLine());
+				tmp = sc.nextInt();
 				bankBalance -= tmp;
 				break;
 			case 3:
@@ -34,8 +34,10 @@ public class BankBalance {
 				break;
 
 				default:
+					System.out.println("오류");
 					flag = false;
 					break;
+					
 			}
 		}
 		System.out.println("프로그램 종료");

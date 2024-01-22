@@ -1,6 +1,6 @@
 package ex01;
 
-public class For01 {
+public class ForSum01 {
 
 	public static void main(String[] args) {
 		int sum = 0;
