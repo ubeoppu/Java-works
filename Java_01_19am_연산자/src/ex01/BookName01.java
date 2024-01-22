@@ -1,7 +1,7 @@
 package ex01;
 import java.util.Scanner;
 
-public class te3 {
+public class BookName01 {
 
 	public static void main(String[] args) {
 		Scanner st = new Scanner(System.in);

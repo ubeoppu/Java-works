@@ -1,6 +1,6 @@
 package ex01;
 import java.util.Scanner;
-public class te4 {
+public class Scanner02 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

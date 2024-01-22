@@ -1,6 +1,6 @@
 package ex01;
 
-public class Con1 {
+public class Con01 {
 
 	public static void main(String[] args) {
 		
