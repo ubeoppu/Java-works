@@ -21,15 +21,34 @@ public class Array02 {
 		for(int i = 0; i<arrNum.length; i++)
 			System.out.println(arrNum[i] + " ");
 		
-		System.out.println("/n ----------------------------------");
+		System.out.print("\n----------------------------------\n");
 		
 		
 		for(int i = 0; i<arrNum.length; i++) 
 			total += arrNum[i];
-		avg = (double)total/arrNum.length;
-			System.out.println("총점:" + total +", 평균:" + avg);
-		
-		
+			System.out.println("총점:" + total +", 평균:" + (double)total/arrNum.length);
+			
+			System.out.print("\n----------------------------------\n");
+			
+			
+			//최대값 구하기
+			//int[]arrNum = new int[10];
+			int max = 0;
+			for(int i = 0; i<arrNum.length; i++) {
+				
+				if(arrNum[i] >max) {
+				max = arrNum[i];
+						
+			}
+			}
+				System.out.println("최대값:" + max);
+				
+				
+				System.out.print("\n----------------------------------\n");
+				
+			
+			}
+	
 	}
 
-}
+
