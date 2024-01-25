@@ -9,7 +9,7 @@ public class Array02 {
 		double avg = 0;
 		int total = 0;
 		
-		int[]arrNum = new int[10];
+		int[]arrNum = new int[5];
 		
 		//1~100이 값을 랜덤하게 추출해서 저장
 		for(int i=0; i <arrNum.length; i++) {
@@ -46,9 +46,23 @@ public class Array02 {
 				
 				System.out.print("\n----------------------------------\n");
 				
+				
+				for(int i = 0; i<arrNum.length; i++) {       //배열 수 만큼 5번 반복
+					for(int j = i+1; j <arrNum.length;j++) {  // 0: 79 , 1: 97, 2:45 , 3: 77, 4:32  4번 반복
+						int tmp;		
+						if(arrNum[i] < arrNum[j]) { //큰 수면 뒤쪽 배열로 넘김
+						tmp = arrNum[i];
+						arrNum[i] = arrNum[j];
+						arrNum[j] =tmp;
+					}
+					}
+				}
 			
+				for(int i =0; i<arrNum.length; i++)
+					System.out.print(arrNum[i] + " ");
+				}
 			}
 	
-	}
+	
 
 
