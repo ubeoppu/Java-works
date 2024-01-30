@@ -20,13 +20,14 @@ public class Book {
 	Book(){
 		this("제목없음", "저자없음", "출판사없음",0); //인자 값 4개
 	}
-	Book(String t){
-		this(t,"저자없음", "출판사없음", 0);
+	Book(String title, String author, int price){
+		this.title = title;
+		//this => 객체 자기 자신을 의미
+		this.author = author;
+		this.price = price;
+		
 	}
 	
-	Book(String t, String a,  int p){          //인자값 3개
-		this(t, a, "출판사없음",p);               //인자값 4개가 됨 / 다른 생성자 호출
-	}
 	
 	Book(String t, String a, String b, int p){  //인자값 4개
 		title = t;
