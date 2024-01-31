@@ -22,7 +22,7 @@ public class SmartPhone extends Phone {
 	}
 	
 	@Override //어노테이션 sendVoice는 상위클래스를 재정의한다. 안정성, 가독성 위해
-	public void sendVoice(String message) {
+	    public void sendVoice(String message) {
 		System.out.println("음성 메시지:" + message);
 		System.out.println("뀨");
 	}
