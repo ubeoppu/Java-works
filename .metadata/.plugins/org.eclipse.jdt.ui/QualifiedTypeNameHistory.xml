@@ -2,5 +2,12 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="Abstract01"/>
+    <fullyQualifiedTypeName name="ex01.RemoteControl"/>
+    <fullyQualifiedTypeName name="java.rmi.Remote"/>
+    <fullyQualifiedTypeName name="ex02.RemoteControl"/>
+    <fullyQualifiedTypeName name="ex03.WAVPlayer"/>
+    <fullyQualifiedTypeName name="ex03.MediaPlayer"/>
+    <fullyQualifiedTypeName name="ex03.MP3Player"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
 </qualifiedTypeNameHistroy>
