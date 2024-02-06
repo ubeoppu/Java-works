@@ -8,8 +8,13 @@
     <fullyQualifiedTypeName name="ex03.WAVPlayer"/>
     <fullyQualifiedTypeName name="ex03.MediaPlayer"/>
     <fullyQualifiedTypeName name="ex03.MP3Player"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="ex02.Product01"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+    <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="ex02.Apple"/>
 </qualifiedTypeNameHistroy>
