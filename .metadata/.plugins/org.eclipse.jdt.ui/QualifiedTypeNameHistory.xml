@@ -15,6 +15,10 @@
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
     <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="ex02.Apple"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="ex08.BoxFactory"/>
+    <fullyQualifiedTypeName name="ex09.unboxer"/>
+    <fullyQualifiedTypeName name="javax.swing.Box"/>
+    <fullyQualifiedTypeName name="ex15.StringBox"/>
 </qualifiedTypeNameHistroy>

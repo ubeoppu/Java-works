@@ -34,21 +34,24 @@ class Box<T>{ //사과담는 상자
 public class FruitBoxEx01 {
 
 	public static void main(String[] args) {
-		Box<Apple> abox = new Box();
-		Box<Orange> obox = new Box();
+//		Box<Apple> abox = new Box<Apple>();
 		
-		abox.setObj(new Apple()); //사과 담음
-		obox.setObj(new Orange());//오렌지 담음!><
+//		Box<Orange> obox = new Box<Orange>();
+		
+//		abox.setObj(new Apple()); //사과 담음
+//		obox.setObj(new Orange());//오렌지 담음!><
 		
 //		Apple ap = box.getObj(); 하위 클래스는 상위 클래스를 참조할 수 없다.!
-		Apple ap = (Apple)abox.getObj();
-		Orange op = (Orange)obox.getObj();
+//		Apple ap = (Apple)abox.getObj();
+//		Orange op = (Orange)obox.getObj();
 		
-		System.out.println(ap);
-		System.out.println(op);
+//		System.out.println(ap);
+//		System.out.println(op);
 		
-		Box<Integer> cbox = new Box(); //제네릭을 사용해서 int형만 대입 가능.
+		Box<Integer> cbox = new Box<Integer>(); //제네릭을 사용해서 int형만 대입 가능.
+		
 		cbox.setObj(100);
+		int num = cbox.getObj();
 		
 		
 		
