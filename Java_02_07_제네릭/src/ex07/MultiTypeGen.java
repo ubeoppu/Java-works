@@ -1,10 +1,10 @@
 package ex07;
 
-class DBox<L, R>{
+class DBox<L, C>{
 	private L left;
-	private R right;
+	private C right;
 	
-	public void set(L left, R right) { //좌측 우측
+	public void set(L left, C right) { //좌측 우측
 		this.left = left;
 		this.right = right;
 	}
@@ -21,7 +21,7 @@ public class MultiTypeGen {
 	
 	DBox<String, Integer>box = new DBox<String, Integer>();
 	
-	box.set("apple", 10);
+	box.set("D", 5);
 	System.out.println(box);
 
 	}

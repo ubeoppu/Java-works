@@ -1,9 +1,10 @@
 package ex01;
-
+//리턴
 // 코드 문제점
 // 1.AppleBox , OrangeBox거의 비슷
 // 2.한 박스에 사과, 오렌지 담고 싶다
-class Apple{
+class Apple<T>{
+	
 	@Override
 	public String toString() { //Object클래스 재정의
 		return "I am an apple";
@@ -11,6 +12,7 @@ class Apple{
 }
 
 class Orange{
+	
 	@Override
 	public String toString() { //Object클래스 재정의
 		return "I am an Orange";

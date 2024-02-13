@@ -1,5 +1,8 @@
 package ex10;
-
+//Box 제네릭 클래스는 obj변수, set메서드, get메서드 가지고있다
+//BoxFactory제네릭 클래스 static makeBox메서드를 가지고있다
+//Unboxer제네릭 클래스 static openBox메서드
+//main에서는 Box에 제네릭을 Double로 선언 후 값은 10.2 대입, Box, BoxFactory출력, Unboxer출력
 
 class Box<T>{
 	private T obj; //하이
@@ -19,7 +22,7 @@ class BoxFactory{
 		Box<T> box = new Box();
 		box.set(o);
 		
-		System.out.println("Boxed" + o.intValue());
+		System.out.println("Boxed:" + o.intValue());
 		return box;
 		
 	}
@@ -28,7 +31,7 @@ class BoxFactory{
 class Unboxer{
 	public static <T extends Number> T openBox(Box<T> box) {
 		
-		System.out.println("unboxed:" + box.get().intValue());
+		System.out.println("unboxed:" + (box.get().intValue()+1));
 		return box.get();
 		
 	}
@@ -36,11 +39,11 @@ class Unboxer{
 public class GenericMethod03 {
 
 	public static void main(String[] args) {
-		Box<Integer>ibox = BoxFactory.makeBox(new Integer(100));
+		Box<Integer>ibox = BoxFactory.<Integer>makeBox(100);
 		
 		
 		int num = Unboxer.openBox(ibox);
-		System.out.println("data" + num);
+		System.out.println("data:" + num);
 		
 		
 	}

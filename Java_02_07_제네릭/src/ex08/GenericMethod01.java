@@ -29,7 +29,10 @@ class BoxFactory{
 	public static<T> Box<T> makeBox(T o){ //static 정적 메서드 생성, 제네릭 사용
 		Box<T>box = new Box<T>();
 		box.set(o);
-		return box;
+	    return box;
+	}
+	void getdo() {
+		
 	}
 }
 
@@ -42,11 +45,10 @@ public class GenericMethod01 {
 		
 		
 //		Box<String> sBox = BoxFactory.makeBox("korea");
-		Box<Integer>box = new Box<Integer>();
-		box.get();
+//		Box<Integer>box = new Box<Integer>();
+//		box.get();
 		
 		Box<String> sBox = BoxFactory.<String>makeBox("korea");
-		
 		
 		System.out.println(sBox.get());
 		

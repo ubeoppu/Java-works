@@ -43,7 +43,10 @@ public class BoxEx02 {
 		Box<B> bbox = new Box<B>();
 		Box<C> cbox = new Box<C>();
 		
-//		Box<Integer> ibox = new Box<Integer>();
+		abox.set(new A());
+		System.out.println(abox.get());
+		
+		//		Box<Integer> ibox = new Box<Integer>();
 		
 
 	}
