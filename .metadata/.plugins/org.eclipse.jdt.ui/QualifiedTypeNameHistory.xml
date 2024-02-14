@@ -9,7 +9,6 @@
     <fullyQualifiedTypeName name="ex03.MediaPlayer"/>
     <fullyQualifiedTypeName name="ex03.MP3Player"/>
     <fullyQualifiedTypeName name="ex02.Product01"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
@@ -21,7 +20,15 @@
     <fullyQualifiedTypeName name="javax.swing.Box"/>
     <fullyQualifiedTypeName name="ex15.StringBox"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="Box"/>
     <fullyQualifiedTypeName name="BoxFactory"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.ListIterator"/>
 </qualifiedTypeNameHistroy>
