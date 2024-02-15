@@ -2,6 +2,7 @@ package ex05;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class ArrayListEx1 {
 

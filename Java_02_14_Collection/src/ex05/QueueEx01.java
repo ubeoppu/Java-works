@@ -19,12 +19,12 @@ public class QueueEx01 {
 				Scanner s = new Scanner(System.in);
 				String input = s.nextLine().trim(); //trim()공란 제거.
 				
-				if("".equals(input)) continue;
+				if("".equals(input)) continue;//반복을 시작했던 반복문으로 되돌아감.
 				
 				if(input.equalsIgnoreCase("q")) { //입력받은 input가 q라면 true
 					System.exit(0);               //System.exit(0); 실행 즉 실행 종료
 				}
-				if(input.equalsIgnoreCase("help")) {  //입력받은 input가 help라면 true
+				if(input.equalsIgnoreCase("help")) {  //입력받은 input가 help라면 true 실행 코드 출력
 					System.out.println("help - 도움말을 보여줍니다.");
 					System.out.println("q 또는 Q - 프로그램을 종료합니다.");
 					System.out.println("history - 최근에 입력한 명령어를" + MAX_SIZE + "개 보여줍니다.");
@@ -34,6 +34,9 @@ public class QueueEx01 {
 					//입력받은 명령어를 저장.
 					save(input); //save호출 및 입력받은input값 대입
 					//LinkedList의 내용을 보여준다.
+					System.out.println("-------");
+					for(Object o : q)
+						System.out.println();
 					LinkedList tmp = (LinkedList)q; //LinkedList q에 주소를 LinkedList tmp가 참조하게 된다.
 					ListIterator it = tmp.listIterator(); ////반복자Iterator 참조변수명 it가 tmp List를 참조하게 된다.
 					
@@ -52,7 +55,7 @@ public class QueueEx01 {
 
 	public static void save(String input) {
 		//queue에 저장한다
-		if(!"".equals(input)) //만약 input가 공백이 아니라면 true
+		if(!"".equals(input)) //만약 input가 공백이 아니라면(부정연산자!) true
 			q.offer(input);   //q queue에 input을 offer해라.
 		
 		//queue의 최대크기를 넘으면 제일 처음 입력된 것을 삭제한다.

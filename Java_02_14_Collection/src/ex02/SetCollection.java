@@ -17,6 +17,11 @@ public class SetCollection {
 		set.add("Toy");
 		set.add("Robot");
 		
+		for(String str : set) {
+			System.out.println(str);
+		}
+		System.out.println("------------");
+		
 		Iterator<String> it = set.iterator(); //반복자를 이용해서 set안 데이터를 출력시킴 
 		
 //	while(it.hasNext()) {
