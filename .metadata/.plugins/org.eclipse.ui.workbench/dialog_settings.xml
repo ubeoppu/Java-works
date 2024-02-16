@@ -25,6 +25,7 @@
 		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
 		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\18\Desktop"/>
 			<item value="C:\Users\18\Desktop\Java-works-main (2)\Java-works-main\Java_01_23_분기문\src\ex01"/>
 			<item value="C:\Users\18\Desktop\Java-works-main\Java-works-main\Java_01_23_분기문02"/>
 		</list>
