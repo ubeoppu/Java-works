@@ -19,7 +19,7 @@ public abstract class AbstractMenu implements Menu{ //추상클래스
 	public AbstractMenu(String menuText, Menu prevMenu) {
 		this.menuText = menuText;
 		this.prevMenu = prevMenu;
-		System.out.println("defalut Con");
+		System.out.println("AbstractMenu Con");
 	}
 	
 	public void setPrevMenu(Menu prevMenu) {

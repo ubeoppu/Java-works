@@ -9,6 +9,8 @@ public class RemoteController {
 		rc.setVolume(5);
 		rc.turnOff();
 		
+		RemoteControl.changeBattery();
+		
 		
 		}
 

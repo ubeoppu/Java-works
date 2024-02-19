@@ -43,9 +43,10 @@
     <fullyQualifiedTypeName name="lombok.Setter"/>
     <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
     <fullyQualifiedTypeName name="java.io.File"/>
-    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="movie.Movie"/>
     <fullyQualifiedTypeName name="lombok.Builder.ObtainVia"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+    <fullyQualifiedTypeName name="movie.Movie"/>
+    <fullyQualifiedTypeName name="java.time.Instant"/>
 </qualifiedTypeNameHistroy>

@@ -16,5 +16,8 @@ public interface RemoteControl {
     }else{
 	System.out.println("무음해제");
 }
+	}
+	static void changeBattery() {
+		System.out.println("리모콘 건전지 교환");
 }
 }
