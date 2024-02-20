@@ -33,6 +33,8 @@ public abstract class AbstractMenu implements Menu{ //추상클래스
 		System.out.println("\n" + menuText);
 	}
 	
+
+	
 //	@Override
 //	public Menu next() {
 //		return null;

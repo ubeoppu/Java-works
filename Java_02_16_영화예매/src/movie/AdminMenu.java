@@ -13,7 +13,9 @@ public class AdminMenu extends AbstractMenu{
 			"b:메인 메뉴로 이동\n" +
 			"메뉴를 선택하세요";
 
-	
+	AdminMenu(){
+		
+	}
 	
 	private AdminMenu(Menu prevMenu) {
      	super(ADMIN_MENU_TEXT, prevMenu); //부모생성자 호출
@@ -71,7 +73,7 @@ public class AdminMenu extends AbstractMenu{
 //			}
 	}
 
-	private void printAllMovies() {
+	public void printAllMovies() {
 		ArrayList<Movie> movies= Movie.findAll(); //모든 영화를 가져옴
 		
 		for(Movie movie : movies) {

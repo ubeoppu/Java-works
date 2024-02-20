@@ -8,10 +8,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.time.Instant;
 import java.util.ArrayList;
-import java.util.Scanner;
-
 import lombok.AllArgsConstructor;
-
+import lombok.Getter;
 @AllArgsConstructor
 public class Movie {
 
@@ -32,7 +30,7 @@ public class Movie {
 		this(Instant.now().getEpochSecond(), title, genre);
 		
 		long id = Instant.now().getEpochSecond();
-		System.out.println("id : " + Instant.now().getEpochSecond());
+	      System.out.println("id : " + Instant.now().getEpochSecond());
 		
 	}
 	
@@ -107,7 +105,7 @@ public class Movie {
 	}
                               //1708309377
 	public static void delete(String movieId) {
-		Scanner sc = new Scanner(System.in);
+		
 		BufferedReader br = null;
 		String text = "";
 		String line = "";
@@ -116,33 +114,62 @@ public class Movie {
 			br = new BufferedReader(new FileReader(file));
 			
 			while((line=br.readLine() )!=null ) {
-				System.out.println("(line):"+line);
 				String[] temp = line.split(",");
-				System.out.println("temp0번째:"+temp[0]);
-				if(movieId.equals(temp[0])) {//만약 movieId가 temp[0]의 값하고 같으면 true
-					System.out.println(line);
+				if(movieId.equals(temp[0])) {
 					continue;
 				}
-				else if(movieId.equals(temp[0])!= true){
-					System.out.println("없는 movieId입니다.");
 				text += line + "\n";
-				FileWriter fw = new FileWriter(file);
-				fw.write(text);
-				fw.close();
-				System.out.println("movieId를 다시 입력하세요:");
-				movieId = sc.nextLine();
-				continue;
-			}
 			}
 			br.close();
 			
+			FileWriter fw = new FileWriter(file);
+			fw.write(text);
 			
-			
-			
+			fw.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	//수정전입니다.
+		public static Movie findAll(String movieID){
+			
+			Movie movie = null;
+			BufferedReader bf = null;
+			
+			try {
+				bf = new BufferedReader(new FileReader(file));
+				String line = null;
+				
+				while((line = bf.readLine())!= null) {
+					String[]temp = line.split(",");
+					if(movieID.equals(temp[0])) {
+						movie = new Movie(
+								Long.parseLong(temp[0]),
+								temp[1],
+								temp[2]
+								);
+						break;
+					}
+					
+				}
+				bf.close();
+				return movie;
+			}catch(Exception e){
+				e.printStackTrace();
+			}
+			return movie;
+		}
+		public long getId() {
+			return id;
+		}
+//		public void setId(long id) {
+//			this.id = id;
+//		}
+		public String getTitle() {
+			return title;
+		}
+//		public void setTitle(String title) {
+//			this.title = title;
+//		}
+	}
 	
-}
+	
