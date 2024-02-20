@@ -37,7 +37,7 @@ public class TestGeneric01 {
 		
 	
 	Box<String> sbox = StringBox.getBox(new String("흐에"));
-	System.out.println(sbox.set()); 
+	System.out.println(sbox.set(null)); 
 	
 	
 	

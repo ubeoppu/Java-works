@@ -32,9 +32,9 @@ public class GenericMethod08 {
 		ibox.set(1234);
 		Unboxer.peekBox(ibox);
 		
-		Box<Double> dbox = new Box();
-		dbox.set(12.5);
-		Unboxer.peekBox(dbox);
+//		Box<Double> dbox = new Box();
+//		dbox.set(12.5);
+//		Unboxer.peekBox(dbox);
 		
 		Box<Object> obox = new Box();
 		obox.set("설날");
