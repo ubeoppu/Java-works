@@ -6,14 +6,11 @@ public class MainApp {
 		
 		System.out.println("프로그램을 시작합니다.");
 		
-		Menu menu = MainMenu.getInstance();
+		Menu menu = MainMenu.getInstance(); //MainMenu의 주소값을 참조변수명 menu에 넣음
 	
-		System.out.println("menu:" + menu);
-		
-		while(menu != null) {
-			menu.print();
-			menu = menu.next(); //menu는 adminMenu의 주소를 갖게됨
-			System.out.println("2:" + menu);
+		while(menu != null) { //menu가 null이 아니라면 실행
+			menu.print();     //print() 메서드 호출
+			menu = menu.next(); //next() 메서드 호출
 		}
 		
 		
